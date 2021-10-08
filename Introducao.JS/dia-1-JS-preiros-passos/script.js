@@ -29,4 +29,32 @@ const area = base*altura;
 const perimeter = 2*base + 2*altura;
 
 console.log(area, perimeter)
+
+const nota = 70;
+
+if (nota >= 80) {
+  console.log('parabéns, aprovado')
+} 
+else if (nota >= 60 && nota <=80 ) {
+  console.log('você está na fila de espera')
+}
+else if (nota < 60) {
+  console.log('você não foi aprovado')
+}
+
+let estado = "aprovado";
+
+switch (estado) {
+  case'aprovado':
+    console.log('parabéns, aprovado');
+    break;
+  case'lista':
+    console.log('você está na fila de espera');
+    break;
+  case'reprovado':
+    console.log('você não foi aprovado');
+    break;
+  default:
+    console.log('não se aplica')
+}
 */
