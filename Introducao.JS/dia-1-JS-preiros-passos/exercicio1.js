@@ -82,3 +82,14 @@ switch (pecaXadrez) {
     break;    
 }
 */
+
+const custo;
+const valorVenda;
+
+const lucro = valorVenda - (custo+0.2*custo);
+
+if (custo==0 || valorVenda==0) {
+  console.log('valor invalido')
+} else {
+  console.log(lucro*1000)
+}
