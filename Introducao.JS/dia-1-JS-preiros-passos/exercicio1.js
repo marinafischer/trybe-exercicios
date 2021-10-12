@@ -83,8 +83,8 @@ switch (pecaXadrez) {
 }
 */
 
-const custo;
-const valorVenda;
+const custo=80;
+const valorVenda=100;
 
 const lucro = valorVenda - (custo+0.2*custo);
 
