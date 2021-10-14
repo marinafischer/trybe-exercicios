@@ -35,3 +35,25 @@ let car = {
 for (let i in car) {
   console.log(`${i}:${car[i]}`)
 }
+
+function soma (a, b) {
+  return a+b;
+}
+
+function subtracao (a,b) {
+  return a-b;
+}
+
+function multiplicacao (a,b) {
+  return a*b;
+}
+
+function divisao (a,b) {
+  return a/b;
+}
+
+function modulo (a,b) {
+  return a%b;
+}
+
+console.log(soma(20,5), divisao(20,5), subtracao(20,5), modulo(20,5), multiplicacao(20,5))
