@@ -28,13 +28,8 @@ let info2 = {
   nota: 'O último MacPatinhas',
   recorrente: 'Sim'
 };
-for(let key in info) {
-  if (info[key] == info2[key]) {
-    console.log('Ambos recorrentes')
-  } else {
-    console.log(info[key] +' e '+ info2[key]);
-  }
-}
+
+
 
 //1 - Crie uma função que receba uma string e retorne true se for um palíndromo , ou false , se não for.
 
@@ -121,7 +116,7 @@ function oInteiroRepete (vetor) {
 }
 
 //6 - Crie uma função que receba um número inteiro N e retorne o somatório de todos os números de 1 até N.
-*/
+
 
 function somatorioDeNumeros (N) {
   let somatorio = 0
@@ -131,3 +126,59 @@ function somatorioDeNumeros (N) {
   return somatorio
 }
 console.log(somatorioDeNumeros(5))
+
+
+//bonus  Faça um programa que receba uma string em algarismos romanos e retorne o número que a string representa.
+const numerosRomanos = {
+  i: 1,
+  v: 5,
+  x: 10,
+  l: 50,
+  c: 100,
+  d: 500,
+  m: 1000,
+};
+
+function romanoParaDecimal(numero) {
+  numero = numero.toLowerCase();
+  const len = numero.length;
+  let soma = numerosRomanos[numero[len - 1]];
+  let atual = numerosRomanos[numero[len - 1]];
+  for (let i = 2; i <= len; i += 1) {
+    const prox = numerosRomanos[numero[len - i]];
+    if (atual <= prox) {
+      soma += prox;
+    } else {
+      soma -= prox;
+    }
+    atual = prox;
+  }
+  return soma;
+}
+
+console.log(romanoParaDecimal('MMXVIII')); // 2018
+console.log(romanoParaDecimal('VI')); // 6
+console.log(romanoParaDecimal('IV')); // 4
+console.log(romanoParaDecimal('XL'));
+
+
+
+let vetor = ['Marina', 'Carol', 'Eduardo'];
+
+for(let index in vetor) {
+  console.log(index);
+}
+
+for(let nome of vetor) {
+  console.log(nome);
+}
+*/
+
+
+for(let key in info2) {
+  if (info[key] == info2[key]) {
+    console.log('Ambos recorrentes')
+  } else {
+    console.log(info[key] +' e '+ info2[key]);
+  }
+}
