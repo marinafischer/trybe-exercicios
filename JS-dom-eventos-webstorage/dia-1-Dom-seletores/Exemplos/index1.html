@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <h2 id="page-title">Título</h2>
+      <p class="paragrafos"  id="paragraph">Dê uma cor para este parágrafo!</p>
+      <h4 id="subtitle">Subtítulo</h4>
+      <p class="paragrafos" id="second-paragraph">Segundo parágrafo!</p>
+    </header>
+    <script>
+      const paragraph = document.getElementById("paragraph");
+      paragraph.style.color = "green";
+      const titulo = document.getElementById("page-title");
+      titulo.innerText = 'Meu filme favorito';
+      const secondParagraph = document.getElementById('second-paragraph');
+      secondParagraph.innerText = 'Terror e Suspense' 
+      const subtitle = document.getElementById('subtitle');
+      subtitle.innerText = 'Meu estilo de filme favorito'
+      const paragrafos = document.getElementsByClassName('paragrafos');
+      paragrafos[0].style.color = "red";
+      document.getElementsByTagName('h4')[0].style.color = 'pink';
+    </script>
+  </body>
+</html>
