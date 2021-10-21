@@ -108,3 +108,52 @@ let sextasDez = [ 4, 11, 18, 25 ]
       }  
     }
   }
+
+  /*
+  Implemente duas funções que criem um efeito de "zoom". Ao passar o ponteiro do mouse em um dia do mês no calendário, o texto desse dia deve aumentar e, quando o ponteiro do mouse sair do dia, o texto deve retornar ao tamanho original.
+Dica - Propriedade: event.target .
+*/
+let diasDoMes = document.getElementsByClassName('day')
+
+for (let i =0; i<diasDoMes.length; i++) {
+  let dia = diasDoMes[i]
+  dia.addEventListener('mouseover', darZoom)
+  dia.addEventListener('mouseleave', tirarZoom)
+
+  function darZoom (e) {
+    e.target.style.fontSize = '30px'
+  }
+  function tirarZoom (e) {
+    e.target.style.fontSize = '20px'
+  }
+}
+
+/*
+Implemente uma função que adiciona uma tarefa personalizada ao calendário. A função deve receber como parâmetro a string com o nome da tarefa (ex: "cozinhar") e criar dinamicamente um elemento com a tag <span> contendo a tarefa.
+O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks" .
+*/
+
+/*
+Implemente uma função que adiciona uma legenda com cor para a tarefa criada no exercício anterior. Esta função deverá receber como parâmetro uma string ("cor") e criar dinamicamente um elemento de tag <div> com a classe task .
+O parâmetro cor deverá ser utilizado como cor de fundo da <div> criada.
+O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks" .
+*/
+
+let botaoAdiciona = document.getElementById('btn-add')
+let descricaoAtividade = document.getElementById('task-input')
+let atividades = document.querySelector('.my-tasks')
+
+botaoAdiciona.addEventListener('click', function(){
+  let novaAtividade = document.createElement('span')
+  novaAtividade.innerHTML = descricaoAtividade.value
+  atividades.appendChild(novaAtividade)
+  descricaoAtividade.value=''
+
+  let legenda = document.createElement('div')
+  legenda.style.backgroundColor = 'rgb(169, 253, 228)'
+  atividades.appendChild(legenda)
+})
+
+/*Implemente uma função que adiciona um evento que ao clicar no elemento com a tag <div> referente a cor da sua tarefa, atribua a este elemento a classe task selected , ou seja, quando sua tarefa possuir a classe task selected ela estará selecionada.
+Ao clicar novamente no elemento a sua classe deverá voltar a ser somente task , ou seja, esta tarefa está deixando de ser uma tarefa selecionada.*/
+
