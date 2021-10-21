@@ -45,6 +45,66 @@ Implemente uma função que receba como parâmetro a string "Feriados" e crie di
 Adicione a este botão a ID "btn-holiday" .
 Adicione este botão como filho/filha da tag <div> com classe "buttons-container" .
 */
+function criarBotao(nomeBotao) {
+  let botao = document.createElement('button');
+  botao.id = "btn-holiday";
+  botao.innerHTML = nomeBotao
+  let containerBotao = document.querySelector('.buttons-container');
+  containerBotao.appendChild(botao)
+}
+criarBotao('Feriados')
 
+ /*
+ Implemente uma função que adicione ao botão "Feriados" um evento de "click" que muda a cor de fundo dos dias que possuem a classe "holiday" .
+  É interessante que este botão possua também a lógica inversa. Ao ser clicado novamente ele retorna à configuração inicial com a cor "rgb(238,238,238)" .
+ */
 
- 
+  let botaoFeriado = document.querySelector('#btn-holiday')
+  botaoFeriado.addEventListener('click', trocaCorFundo)
+
+  function trocaCorFundo (e) {
+    let feriados = document.getElementsByClassName('holiday')
+    for (let i=0; i<feriados.length; i++) {
+      let feriado = feriados[i];
+      if (feriado.style.backgroundColor !== 'pink') {
+        feriado.style.backgroundColor = 'pink'
+      } else {
+        feriado.style.backgroundColor = 'rgb(238,238,238)'
+      }  
+    }
+  }
+
+  /*
+Implemente uma função que receba como parâmetro a string "Sexta-feira" e crie dinamicamente um botão com o nome "Sexta-feira".
+Adicione a este botão o ID "btn-friday" .
+Adicione este botão como filho/filha da tag <div> com classe "buttons-container" .
+  */
+function criarBotaoSexta(nomeBotao) {
+  let botao = document.createElement('button');
+  botao.id = "btn-friday";
+  botao.innerHTML = nomeBotao
+  let containerBotao = document.querySelector('.buttons-container');
+  containerBotao.appendChild(botao)
+}
+criarBotaoSexta('Sexta-feira')
+
+/*
+Implemente uma função que adicione ao botão "Sexta-feira" um evento de "click" que modifica o texto exibido nos dias que são Sexta-feira.
+É interessante que este botão possua também a lógica inversa. Ao ser clicado novamente ele retorna à configuração inicial exibindo os dias.
+*/
+
+let botaoSexta = document.querySelector('#btn-friday')
+botaoSexta.addEventListener('click', trocaCorFundo2)
+let sextas = document.getElementsByClassName('friday')
+let sextasDez = [ 4, 11, 18, 25 ]
+
+  function trocaCorFundo2 (e) {    
+    for (let i=0; i<sextas.length; i++) {
+      let sexta = sextas[i];
+      if (sexta.innerHTML !== 'sextou') {
+        sexta.innerHTML = 'sextou'
+      } else {
+        sexta.innerHTML = sextasDez[i]
+      }  
+    }
+  }
