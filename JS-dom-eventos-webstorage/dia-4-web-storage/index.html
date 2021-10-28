@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Leitor de Texto</title>
+</head>
+<body>
+  <h1>Seu Leitor de notícias personalizado</h1>
+  <section class="contentor-noticias">
+    <section class="noticia">
+      <h2>Notícia 1</h2>
+      <p>
+        Nunc non pulvinar neque. Aliquam dapibus est ipsum, eu commodo leo sodales semper. Duis fermentum augue in tincidunt viverra. Ut egestas, justo in blandit iaculis, massa erat bibendum mauris, sed condimentum lorem lacus eu velit. Duis in fringilla risus, sit amet vehicula nunc. Vestibulum porttitor lorem ante, et vehicula lacus bibendum ac. Nulla aliquam mollis aliquet. Morbi laoreet leo eu ante viverra, in blandit nunc sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer feugiat nunc at dolor pellentesque dignissim. Quisque finibus, lectus a pretium condimentum, purus magna placerat lorem, sed efficitur purus lorem suscipit nunc. Morbi rutrum iaculis vestibulum. Donec mauris mauris, sollicitudin non nunc sed, posuere tincidunt arcu. Aenean cursus tellus id orci egestas, nec feugiat neque porttitor.
+      </p>
+      <p>
+        Proin lobortis orci ac aliquam posuere. Nunc tincidunt urna sapien, sit amet cursus magna interdum nec. Proin ut consectetur enim, non mollis leo. Sed placerat quam sit amet dignissim lobortis. In lorem nunc, sodales nec diam id, pretium volutpat eros. Nulla tempor lectus justo, non congue odio ornare ac. Vivamus blandit rutrum risus. Cras pellentesque sem a leo euismod, vel auctor eros fringilla. Integer tellus mi, scelerisque vitae velit eu, viverra iaculis massa. Pellentesque tempus a lectus non tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris gravida eros id felis faucibus, in vulputate turpis cursus. Morbi laoreet erat et enim blandit rutrum.
+      </p>
+      <p>
+        Nulla vulputate hendrerit nibh, ac eleifend dui auctor nec. Curabitur malesuada at velit ut feugiat. Nunc velit nulla, molestie in ultrices in, aliquam quis nunc. Donec lectus libero, venenatis sed venenatis sed, vehicula sit amet nisi. Aliquam erat volutpat. Maecenas ipsum tellus, placerat a lacinia vel, blandit non velit. Proin accumsan justo ac nisl facilisis euismod.
+      </p>
+    </section>
+    <section class="noticia">
+      <h2>Notícia 2</h2>
+      <p>
+        Morbi eu pretium libero, et molestie neque. Quisque quam enim, eleifend vitae dui eu, dictum sollicitudin enim. Duis rutrum augue in magna ullamcorper vehicula. Quisque vulputate, nisl a mollis cursus, quam tortor cursus neque, sit amet sollicitudin mi purus ornare dui. Nam accumsan bibendum dolor, a finibus tellus euismod sodales. Quisque imperdiet justo vel dignissim vulputate. Quisque sed metus sit amet eros sodales egestas. Quisque mollis magna non euismod lacinia. Etiam commodo ipsum et turpis finibus molestie. Nullam porta ante quis sapien tincidunt, in euismod turpis feugiat. Proin vehicula odio et elit posuere dictum. Donec in nunc eu nunc consectetur mollis in in metus. Fusce volutpat ligula nec elit molestie volutpat.
+      </p>
+      <p>
+        Phasellus elit est, posuere quis urna sed, sollicitudin imperdiet tellus. Integer id odio sit amet sem varius vulputate. Curabitur lobortis, velit ut finibus luctus, nisl nibh cursus tortor, et gravida felis enim vel arcu. Curabitur consectetur nisi eget lectus lacinia, in viverra erat tincidunt. Integer vitae porttitor sem, in malesuada est. Sed quis dolor a turpis tempus hendrerit. Fusce at efficitur velit. Nunc varius nec mauris non varius. Cras enim tellus, porttitor et cursus ac, feugiat ac tortor. Aliquam hendrerit augue aliquet risus malesuada, vitae porta lacus rutrum. Morbi mollis, velit sed congue blandit, eros dolor tristique ipsum, at iaculis neque urna sed risus.
+      </p>
+    </section>
+  </section>
+
+  <section class="configuracoes">
+    <h4>Configure o texto</h4>
+    <section class="cor-fundo">
+      <h5>Cor de Fundo</h5>
+      <div id="seletorFundoPreto" class="preto cursor-pointer"></div>
+      <div id="seletorFundoBranco" class="branco cursor-pointer"> </div>
+      <div id="seletorFundoAzul" class="azul-escuro cursor-pointer"> </div>
+      <div id="seletorFundoRosa" class="rosa-claro cursor-pointer"> </div>
+    </section>
+    <section class="cor-letra">
+      <h5>Cor da Letra</h5>
+      <div id='seletorLetraPreta' class="preto cursor-pointer"> </div>
+      <div id='seletorLetraBranca' class="branco cursor-pointer"> </div>
+      <div id='seletorLetraAzul' class="azul-claro cursor-pointer"> </div>
+      <div id='seletorLetraVerde' class="verde-escuro cursor-pointer"> </div>
+    </section>
+    <section class="tamanho-fonte">
+      <h5>Tamanho da Fonte</h5>
+      <div id="seletorTamanhoP" class="pequena cursor-pointer">Aa Bb Cc</div>
+      <div id="seletorTamanhoM" class="media cursor-pointer">Aa Bb Cc</div>
+      <div id="seletorTamanhoG" class="grande cursor-pointer">Aa Bb Cc</div>
+      <div id="seletorTamanhoXG" class="extra-grade cursor-pointer">Aa Bb Cc</div>
+    </section>
+    <section class="espacamento- fonte">
+      <label>Escolha o espaçamento das linhas:
+        <select class="espacamento">
+          <option value="1">Espaçamento Simples</option>
+          <option value="1.5">Espaçamento Duplo</option>
+          <option value="2">Espaçamento Triplo</option>
+        </select>
+      </label>
+      <label>Escolha o tipo de fonte:
+        <select class="fonte">
+          <option value="Arial">Arial</option>
+          <option value="Verdana">Verdana</option>
+          <option value="Helvetica">Helvetica</option>
+        </select>
+      </label>
+    </section>
+  </section>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>

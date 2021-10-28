@@ -1,0 +1,150 @@
+* {
+  background-color: rgb(218, 218, 218);
+}
+h1 {
+  text-align: center;
+  margin: 10px auto;
+  padding: 10px;
+  width: 30%;
+  border: 2px solid grey;
+  color: grey;
+}
+
+.contentor-noticias {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  padding: 20px;
+  border: solid;
+}
+
+.noticia {
+  flex: 1;
+  margin: 20px;
+  padding: 10px;
+  text-align: justify;
+}
+
+.configuracoes {
+  display: flex;
+  flex-direction: row;
+}
+
+.configuracoes h4 {
+  flex: 1;
+  margin: auto;
+  text-align: center;
+}
+
+.cor-fundo {
+  flex: 1;
+  display: flex;
+  margin: auto;
+}
+
+.cor-letra {
+  flex: 1;
+  display: flex;
+  margin: auto;
+}
+
+
+.preto {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 5px;
+  margin: 5px;
+}
+
+.branco {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 5px;
+  margin: 5px;
+}
+
+.azul-escuro {
+  width: 30px;
+  height: 30px;
+  background-color:rgb(32, 32, 102) ;
+  border: 1px solid rgb(15, 15, 56);
+  border-radius: 50%;
+  padding: 5px;
+  margin: 5px;
+}
+
+.rosa-claro {
+  width: 30px;
+  height: 30px;
+  background-color: pink;
+  border: 1px solid palevioletred;
+  border-radius: 50%;
+  padding: 5px;
+  margin: 5px;
+}
+
+.azul-claro{
+  width: 30px;
+  height: 30px;
+  background-color: rgb(196, 192, 255);
+  border: 1px solid rgb(112, 140, 216);
+  border-radius: 50%;
+  padding: 5px;
+  margin: 5px;
+}
+
+.verde-escuro{
+  width: 30px;
+  height: 30px;
+  background-color: rgb(60, 129, 64);
+  border: 1px solid rgb(19, 37, 20);
+  border-radius: 50%;
+  padding: 5px;
+  margin: 5px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.pequena {
+  color: rgb(218, 218, 218);
+  background-color:grey;
+  padding: 5px;
+  margin: 5px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.media {
+  color: rgb(218, 218, 218);
+  background-color:grey;
+  padding: 5px;
+  margin: 5px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.grande {
+  color: rgb(218, 218, 218);
+  background-color:grey;
+  padding: 5px;
+  margin: 5px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.extra-grade {
+  color: rgb(218, 218, 218);
+  background-color:grey;
+  padding: 5px;
+  margin: 5px;
+  font-size: 30px;
+  text-align: center;
+}
