@@ -8,11 +8,12 @@
   <title>Formulário</title>
 </head>
 <body>
-  <h1>Formulário de Currículo</h1>
-  <p>*Informações Obrigatórias</p>
-  <fieldset>  
-    <legend>Informações Pessoais</legend>
-    <form method="get"> 
+  
+  <form method="get">
+    <h1>Formulário de Currículo</h1>
+    <p>*Informações Obrigatórias</p>
+    <fieldset>  
+      <legend>Informações Pessoais</legend> 
       <label for="nome">Nome Completo*</label>
       <input type="text" maxlength="40" required id="nome" name="nome" placeholder="Digite aqui seu nome">
       <label for="email">e-mail*</label>
@@ -33,18 +34,26 @@
       <label for="apartamento"> 
         <input name="tipo-moradia" type="radio" id="apartamento" value="ap">Apartamento
       </label> 
-    </form>
-  </fieldset>
-
-  <fieldset>
-    <legend>Dados do Último Emprego</legend>
-    <form>
+      <br>
+      <br>
+    </fieldset>
+    <br>
+    <br>
+    <fieldset>
+      <legend>Dados do Último Emprego</legend>
       <label for="resumo-curriculo">Resumo do seu currículo</label>
       <textarea required maxlength="1000" id="resumo-curriculo" name="resumo-curriculo"></textarea>
-      
-
-    </form>
-  </fieldset>
+      <label for="cargo">Cargo</label>
+      <input type="text" id="cargo" name="cargo" placeholder="cargo ocupado" required maxlength="40">
+      <label for="descricao-cargo">Descrição do Cargo</label>
+      <input type="text" id="descricao-cargo" name="descricao-cargo" placeholder="descreva brevemente as funções no cargo ocupado" required maxlength="500"> 
+      <label for="data-inicio">Data de início</label>
+      <input type="date" id="data-inicio" name="data-inicio" required>
+      <br>
+      <br>
+    </fieldset>
+    <button id="enviarDados">Enviar Dados</button>
+  </form>  
 
   <script src="script.js"></script>
 </body>

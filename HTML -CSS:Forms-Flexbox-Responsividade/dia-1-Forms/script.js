@@ -1,4 +1,4 @@
-const seletorEstado = document.getElementById('estado')
+const seletorEstado = document.getElementById('estado');
 const estados = [
   {
     nome: 'Acre',
@@ -108,11 +108,16 @@ const estados = [
     nome: 'Distrito Federal',
     sigla: 'DF',
   },
-]
+];
+const btnEnviar = document.getElementById('enviarDados');
 
 for (let i in estados) {
   const estado = document.createElement('option');
   estado.innerText = estados[i].nome;
   estado.value = estados[i].sigla;
-  seletorEstado.appendChild(estado)
+  seletorEstado.appendChild(estado);
 }
+
+btnEnviar.addEventListener('click', (e)=>{
+  e.preventDefault();
+})
