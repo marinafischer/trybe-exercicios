@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Formulário</title>
+</head>
+<body>
+  <h1>Formulário de Currículo</h1>
+  <p>*Informações Obrigatórias</p>
+  <fieldset>  
+    <legend>Informações Pessoais</legend>
+    <form method="get"> 
+      <label for="nome">Nome Completo*</label>
+      <input type="text" maxlength="40" required id="nome" name="nome" placeholder="Digite aqui seu nome">
+      <label for="email">e-mail*</label>
+      <input type="text" maxlength="50" required id="email" name="email" placeholder="Digite aqui seu e-mail">
+      <label for="cpf">CPF*</label>
+      <input type="text" maxlength="11" required id="cpf" name="cpf" placeholder="00000000000">
+      <br>
+      <br>
+      <label for="endereco">Endereço*</label>
+      <input type="text" maxlength="200" required id="endereco" name="endereco" placeholder="Rua/Avenida, nº, complemento">
+      <label for="cidade">Cidade*</label>
+      <input type="text" maxlength="28" required id="cidade" name="cidade" placeholder="Cidade">
+      <label for="estado">Selecione Seu Estado</label>
+      <select id="estado" name="estado" required></select>
+      <label for="casa"> 
+        <input required name="tipo-moradia" type="radio" id="casa" value="casa"> Casa
+      </label> 
+      <label for="apartamento"> 
+        <input name="tipo-moradia" type="radio" id="apartamento" value="ap">Apartamento
+      </label> 
+    </form>
+  </fieldset>
+
+  <fieldset>
+    <legend>Dados do Último Emprego</legend>
+    <form>
+      <label for="resumo-curriculo">Resumo do seu currículo</label>
+      <textarea required maxlength="1000" id="resumo-curriculo" name="resumo-curriculo"></textarea>
+      
+
+    </form>
+  </fieldset>
+
+  <script src="script.js"></script>
+</body>
+</html>
