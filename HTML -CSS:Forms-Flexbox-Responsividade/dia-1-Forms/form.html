@@ -8,7 +8,6 @@
   <title>Formulário</title>
 </head>
 <body>
-  
   <form method="get">
     <h1>Formulário de Currículo</h1>
     <p>*Informações Obrigatórias</p>
@@ -27,7 +26,9 @@
       <label for="cidade">Cidade*</label>
       <input type="text" maxlength="28" required id="cidade" name="cidade" placeholder="Cidade">
       <label for="estado">Selecione Seu Estado</label>
-      <select id="estado" name="estado" required></select>
+      <select id="estado" name="estado" required>
+        <option selected disabled> </option>
+      </select>
       <label for="casa"> 
         <input required name="tipo-moradia" type="radio" id="casa" value="casa"> Casa
       </label> 
@@ -52,9 +53,9 @@
       <br>
       <br>
     </fieldset>
+    <br>
     <button id="enviarDados">Enviar Dados</button>
   </form>  
-
   <script src="script.js"></script>
 </body>
 </html>
