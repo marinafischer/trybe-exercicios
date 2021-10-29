@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+} 
+
+form {
+  width: 80%;
+  margin: 5% auto;
+  background-color: rgb(230, 248, 247);
+  padding: 1%;
+}
+
+form h1 {
+  width: 80%;
+  text-align: center;
+  color: rgb(136, 136, 136);
+  margin: 2%;
+  padding: 1%;
+}
+
+form p {
+  font-style: italic;
+  color: rgb(136, 136, 136);
+  padding: 0.5%;
+}
+
+fieldset {
+  margin: 1%;
+  padding: 1%;
+  text-align: left;
+}
+
+input[type = "textarea"] {
+  resize: none;
+}
+
+form button {
+  margin: 0.5%;
+  padding: 0.5%;
+  border-radius: 10px;
+}
+
+form button:hover {
+  background-color: rgb(136, 136, 136);
+}
+
+.error {
+  display: block;
+  width: 30%;
+  margin: auto;
+  margin-bottom: 10px;
+  padding: 0.5%;
+  line-height: 20px;
+  border: 3px solid red;
+  background-color: rgb(255, 121, 121);
+  border-radius: 10px;
+}
+
+.data {
+  display: block;
+  width: 30%;
+  margin: auto;
+  margin-bottom: 10px;
+  padding: 0.5%;
+  line-height: 20px;
+  border: 3px solid green;
+  background-color: rgb(167, 255, 145);
+  border-radius: 10px;
+}
