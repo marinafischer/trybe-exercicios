@@ -251,12 +251,14 @@ function verificarInfos () {
 //cria a Div com os dados inseridos
 function imprimeDadosConsolidados () {
   dadosConsolidados.innerHTML = dados;
+  dadosConsolidados.className = 'data'
   corpoDaPagina.appendChild(dadosConsolidados);
 }
 
 //cria div de divergencia dos dados
 function imprimeMensagemErro () {
   mensagemErro.innerHTML = erro;
+  mensagemErro.className = 'error'
   corpoDaPagina.appendChild(mensagemErro);
 }
 
@@ -264,8 +266,10 @@ function imprimeMensagemErro () {
 function limpaDados () {
   erro = '';
   mensagemErro.innerHTML = erro;
+  mensagemErro.className = ''
   dados = '';
   dadosConsolidados.innerHTML = dados;
+  dados.className =  '';
   verificador = true;
   nome.value = '' 
   email.value = '' 
