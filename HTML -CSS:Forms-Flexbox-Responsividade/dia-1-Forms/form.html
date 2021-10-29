@@ -18,7 +18,7 @@
       <label for="email">e-mail*</label>
       <input type="text" maxlength="50" required id="email" name="email" placeholder="Digite aqui seu e-mail">
       <label for="cpf">CPF*</label>
-      <input type="text" maxlength="11" required id="cpf" name="cpf" placeholder="00000000000">
+      <input type="text" maxlength="11" required id="cpf" name="cpf" placeholder="digite somento números">
       <br>
       <br>
       <label for="endereco">Endereço*</label>
@@ -49,13 +49,15 @@
       <label for="descricao-cargo">Descrição do Cargo</label>
       <input type="text" id="descricao-cargo" name="descricao-cargo" placeholder="descreva brevemente as funções no cargo ocupado" required maxlength="500"> 
       <label for="data-inicio">Data de início</label>
-      <input type="date" id="data-inicio" name="data-inicio" required>
+      <input type="text" id="data-inicio" name="data-inicio" placeholder="dd/mm/aaaa" required>
       <br>
       <br>
     </fieldset>
     <br>
     <button id="enviarDados">Enviar Dados</button>
-  </form>  
+    <button id="limparDados">Limpar Dados</button>
+  </form>
+  <br>  
   <script src="script.js"></script>
 </body>
 </html>

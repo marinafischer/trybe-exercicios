@@ -121,10 +121,15 @@ const endereco = document.getElementById('endereco');
 const cidade = document.getElementById('cidade');
 const estado = document.getElementById('estado');
 const tipoMoradia = document.getElementsByName('tipo-moradia');
+const resumoCurriculo = document.getElementById('resumo-curriculo');
+const cargo = document.getElementById('cargo');
+const descricaoCargo = document.getElementById('descricao-cargo');
+const dataInicio = document.getElementById('data-inicio');
+const btnLimparDados = document.getElementById('limparDados');
+const mensagemErro = document.createElement('div');
+const dadosConsolidados = document.createElement('div');
 
-
-
-
+//gera as options do estado
 for (let i in estados) {
   const estado = document.createElement('option');
   estado.innerText = estados[i].nome;
@@ -132,6 +137,7 @@ for (let i in estados) {
   seletorEstado.appendChild(estado);
 }
 
+//botão enviar - retira comportamento normal e faz verificações via JS
 btnEnviar.addEventListener('click', (e)=>{
   e.preventDefault();
   verificarInfos();
@@ -142,61 +148,135 @@ btnEnviar.addEventListener('click', (e)=>{
   }
 });
 
+btnLimparDados.addEventListener('click', (e) => {
+  e.preventDefault();
+  limpaDados();
+
+})
+
+//verificações dos campos 
 function verificarInfos () {
-  if(nome.value.trim() !== '' || nome.length <= 40 ) {
-    dados += `nome: ${nome.value};`
+  if(nome.value.trim() !== '' && nome.value.length <= 40 ) {
+    dados += `nome: ${nome.value} <br>`
   } else {
     verificador = false;
-    erro += ` Nome inválido;`
+    erro += `Nome inválido <br>`
   }
-  if(email.value.trim() !== '' || email.length <= 50 ) {
-    dados += ` e-mail: ${email.value};`
+  if(email.value.trim() !== '' && email.value.length <= 50 && email.value.includes('@')) {
+    dados += `e-mail: ${email.value} <br>`
   } else {
     verificador = false;
-    erro += ` email inválido;`
+    erro += ` e-mail inválido <br>`
   }
-  if(cpf.value.trim() !== '' || cpf.length <= 11 ) {
-    dados += ` e-mail: ${cpf.value};`
+  if(cpf.value.trim() !== '' && cpf.value.length === 11 && Number(cpf.value) ) {
+    dados += `CPF: ${cpf.value} <br>`
   } else {
     verificador = false;
-    erro += ` CPF inválido;`
+    erro += `CPF inválido <br>`
   }
-  if(endereco.value.trim() !== '' || endereco.length <= 200 ) {
-    dados += ` Endereço: ${endereco.value};`
+  if(endereco.value.trim() !== '' && endereco.value.length <= 200 ) {
+    dados += `endereço: ${endereco.value} <br>`
   } else {
     verificador = false;
-    erro += ` Endereço inválido;`
+    erro += `Endereço inválido <br>`
   }
-  if(cidade.value.trim() !== '' || cidade.length <= 28 ) {
-    dados += ` Cidade: ${cidade.value};`
+  if(cidade.value.trim() !== '' && cidade.value.length <= 28 ) {
+    dados += `cidade: ${cidade.value} <br>`
   } else {
     verificador = false;
-    erro += ` Cidade inválido;`
+    erro += `Cidade inválida <br>`
   }
   if(estado.value.trim() !== '') {
-    dados += ` estado: ${estado.value};`
+    dados += `estado: ${estado.value} <br>`
   } else {
     verificador = false;
-    erro += ` estado inválido;`
+    erro += `Estado inválido <br>`
   } 
   if(tipoMoradia[0].checked == false && tipoMoradia[1].checked == false) {
     verificador = false;
-    erro += ` selecione um tipo de Moradia;`
+    erro += `Selecione um tipo de Moradia <br>`
   } else if  (tipoMoradia[0].checked == true) {
-    dados += ` Tipo de Moradia: casa;`
+    dados += `Tipo de Moradia: casa <br>`
   } else {
-    dados += ` Tipo de Moradia: ap;`
+    dados += `Tipo de Moradia: ap <br>`
+  }
+  if(resumoCurriculo.value.trim() !== '' && resumoCurriculo.value.length <= 1000 ) {
+    dados += `Resumo do Currículo: ${resumoCurriculo.value} <br>`
+  } else {
+    verificador = false;
+    erro += `Resumo do Currículo inválido <br>`
+  }
+  if(cargo.value.trim() !== '' && cargo.value.length <= 40) {
+    dados += `Cargo: ${cargo.value} <br>`
+  } else {
+    verificador = false;
+    erro += `Cargo inválido <br>`
+  }
+  if(descricaoCargo.value.trim() !== '' && descricaoCargo.value.length <= 40) {
+    dados += `Descrição do Cargo: ${descricaoCargo.value} <br>`
+  } else {
+    verificador = false;
+    erro += `Descrição do Cargo inválida <br>`
+  }
+
+  let regex = /^\d\d\/\d\d\/\d\d\d\d$/;
+  if (dataInicio.value.length ===0) {
+    verificador = false;
+    erro += `Data de início não informada <br>`
+  } else if (!regex.test(dataInicio.value)) {
+    verificador = false;
+    erro += `Data de início - formato de data não suportado<br>`
+  }
+
+  let dataSplit = dataInicio.value.split('/');
+  let day = dataSplit[0];
+  let mes = dataSplit[1];
+  let ano = dataSplit[2];
+  if(day < 0 || day > 30) {
+    verificador = false;
+    erro += `Data de início - dia invalido<br>`
+  }
+  if(mes < 0 || mes > 12) {
+    verificador = false;
+    erro += `Data de início - mês invalido<br>`
+  }
+  if(ano < 0) {
+    verificador = false;
+    erro += `Data de início - ano invalido<br>`
+  } else {
+    dados += `Data de início: ${dataInicio.value} <br>`
   }
 }
 
+//cria a Div com os dados inseridos
 function imprimeDadosConsolidados () {
-  const dadosConsolidados = document.createElement('div');
   dadosConsolidados.innerHTML = dados;
   corpoDaPagina.appendChild(dadosConsolidados);
 }
 
+//cria div de divergencia dos dados
 function imprimeMensagemErro () {
-  const mensagemErro = document.createElement('div');
   mensagemErro.innerHTML = erro;
   corpoDaPagina.appendChild(mensagemErro);
+}
+
+//limpar Dados inseridos e armazenados
+function limpaDados () {
+  erro = '';
+  mensagemErro.innerHTML = erro;
+  dados = '';
+  dadosConsolidados.innerHTML = dados;
+  verificador = true;
+  nome.value = '' 
+  email.value = '' 
+  cpf.value = ''   
+  endereco.value = ''  
+  cidade.value = ''  
+  estado.value = ''  
+  tipoMoradia[0].checked = false;
+  tipoMoradia[1].checked = false;
+  resumoCurriculo.value = '' 
+  cargo.value = '' 
+  descricaoCargo.value = '' 
+  dataInicio.value = '' 
 }
