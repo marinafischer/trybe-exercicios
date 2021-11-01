@@ -1,0 +1,16 @@
+body {
+  background-color: rgb(207, 207, 207);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+form {
+  width: 70%;
+  margin: 2% auto;
+  text-align: center;
+  background-color: white;
+  padding: 2%;
+}
+
+.center {
+  justify-content: center;
+}
