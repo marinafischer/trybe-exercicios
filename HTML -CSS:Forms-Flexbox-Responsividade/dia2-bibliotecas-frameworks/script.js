@@ -129,6 +129,8 @@ const btnLimparDados = document.getElementById('limparDados');
 const mensagemErro = document.createElement('div');
 const dadosConsolidados = document.createElement('div');
 
+dataInicio.DatePickerX.init({format: 'dd-mm-yyyy'});
+
 //gera as options do estado
 for (let i in estados) {
   const estado = document.createElement('option');
@@ -137,25 +139,25 @@ for (let i in estados) {
   seletorEstado.appendChild(estado);
 }
 
-// //botão enviar - retira comportamento normal e faz verificações via JS
-// btnEnviar.addEventListener('click', (e)=>{
-//   e.preventDefault();
+//botão enviar - retira comportamento normal e faz verificações via JS
+btnEnviar.addEventListener('click', (e)=>{
+  e.preventDefault();
 //   verificarInfos();
 //   if(verificador === false) {
 //     imprimeMensagemErro();
 //   } else {
 //     imprimeDadosConsolidados();
 //   }
-// });
+});
 
-// btnLimparDados.addEventListener('click', (e) => {
-//   e.preventDefault();
+btnLimparDados.addEventListener('click', (e) => {
+  e.preventDefault();
 //   limpaDados();
 
-// })
+})
 
-// //verificações dos campos 
-// function verificarInfos () {
+// verificações dos campos 
+function verificarInfos () {
 //   if(nome.value.trim() !== '' && nome.value.length <= 40 ) {
 //     dados += `nome: ${nome.value} <br>`
 //   } else {
@@ -219,34 +221,8 @@ for (let i in estados) {
 //     erro += `Descrição do Cargo inválida <br>`
 //   }
 
-//   let regex = /^\d\d\/\d\d\/\d\d\d\d$/;
-//   if (dataInicio.value.length ===0) {
-//     verificador = false;
-//     erro += `Data de início não informada <br>`
-//   } else if (!regex.test(dataInicio.value)) {
-//     verificador = false;
-//     erro += `Data de início - formato de data não suportado<br>`
-//   }
-
-//   let dataSplit = dataInicio.value.split('/');
-//   let day = dataSplit[0];
-//   let mes = dataSplit[1];
-//   let ano = dataSplit[2];
-//   if(day < 0 || day > 30) {
-//     verificador = false;
-//     erro += `Data de início - dia invalido<br>`
-//   }
-//   if(mes < 0 || mes > 12) {
-//     verificador = false;
-//     erro += `Data de início - mês invalido<br>`
-//   }
-//   if(ano < 0) {
-//     verificador = false;
-//     erro += `Data de início - ano invalido<br>`
-//   } else {
-//     dados += `Data de início: ${dataInicio.value} <br>`
-//   }
-// }
+dados += `Data de início: ${dataInicio.value} <br>`
+}
 
 // //cria a Div com os dados inseridos
 // function imprimeDadosConsolidados () {
