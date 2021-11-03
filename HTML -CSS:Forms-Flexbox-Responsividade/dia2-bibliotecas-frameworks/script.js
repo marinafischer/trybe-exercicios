@@ -128,8 +128,8 @@ const dataInicio = document.getElementById('data-inicio');
 const btnLimparDados = document.getElementById('limparDados');
 const mensagemErro = document.createElement('div');
 const dadosConsolidados = document.createElement('div');
-
 dataInicio.DatePickerX.init({format: 'dd-mm-yyyy'});
+
 
 //gera as options do estado
 for (let i in estados) {
@@ -142,7 +142,7 @@ for (let i in estados) {
 //botão enviar - retira comportamento normal e faz verificações via JS
 btnEnviar.addEventListener('click', (e)=>{
   e.preventDefault();
-//   verificarInfos();
+  verificarInfos();
 //   if(verificador === false) {
 //     imprimeMensagemErro();
 //   } else {
@@ -158,6 +158,7 @@ btnLimparDados.addEventListener('click', (e) => {
 
 // verificações dos campos 
 function verificarInfos () {
+
 //   if(nome.value.trim() !== '' && nome.value.length <= 40 ) {
 //     dados += `nome: ${nome.value} <br>`
 //   } else {
@@ -220,8 +221,7 @@ function verificarInfos () {
 //     verificador = false;
 //     erro += `Descrição do Cargo inválida <br>`
 //   }
-
-dados += `Data de início: ${dataInicio.value} <br>`
+  dados += `Data de início: ${dataInicio.value} <br>`
 }
 
 // //cria a Div com os dados inseridos

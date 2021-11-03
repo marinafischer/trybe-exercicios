@@ -10,7 +10,7 @@
     <title>Formulário</title>
   </head>
   <body>
-    <form method="get">
+    <form class="js-form" method="get">
       <h1>Formulário de Currículo</h1>
       <p>*Informações Obrigatórias</p>
       <fieldset>
@@ -19,9 +19,10 @@
         </div>
         <div class="row">
           <div class="input-group mb-3 col">
-            <label class="input-group-text" for="nome">Nome Completo*</label>
+            <label class="input-group-text " for="nome">Nome Completo*</label>
             <input
               class="form-control"
+              data-validate-field="name"
               type="text"
               maxlength="40"
               required
@@ -33,6 +34,7 @@
           <div class="input-group mb-3 col">
             <label class="input-group-text" for="email">e-mail*</label>
             <input
+              data-validate-field="email"
               class="form-control"
               type="text"
               maxlength="50"
@@ -187,6 +189,7 @@
         </button>
       </div>
     </form>
+    <script src="node_modules/just-validate/dist/js/just-validate.min.js"></script>
     <script src="DatePickerX-master/dist/js/DatePickerX.min.js"></script>
     <script src="script.js"></script>
   </body>
