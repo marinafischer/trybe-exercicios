@@ -86,7 +86,6 @@ function averageAge() {
     return acc + (book.releaseYear - book.author.birthYear)
   }, 0)/books.length
 }
-
 console.log(averageAge())
 
 //4 - Encontre o livro com o maior nome.
