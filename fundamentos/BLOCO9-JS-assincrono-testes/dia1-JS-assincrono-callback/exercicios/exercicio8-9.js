@@ -29,7 +29,7 @@ function getPokemonDetails(filter, callback) {
 
     messageFromProfOak = `Olá, seu pokémon é o ${name}, o tipo dele é ${type} e a habilidade principal dele é ${ability}`;
 
-    return callback(null, messageFromProfOak);
+    callback(null, messageFromProfOak);
   }, 2000);
 }
 
@@ -40,7 +40,8 @@ const funcaoRetorno = (erro, mensagem) => {
   else return console.log(mensagem);
 }
 
-//console.log(getPokemonDetails(filtro,funcaoRetorno))
+// console.log(getPokemonDetails(filtro,funcaoRetorno))
+getPokemonDetails(filtro,funcaoRetorno)
 
 module.exports = {
   getPokemonDetails,
