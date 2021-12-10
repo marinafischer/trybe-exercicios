@@ -1,15 +1,13 @@
 import './App.css';
-import Pokemon from './pokemon';
+import PokemonContent from './Components/PokemonContent';
 import pokemons from './data';
 
 function App() {
   return (
-    <body>
+    <div className='pokemons-content'>
       <h1>Pokedex</h1>
-      <div className="content">
-        {pokemons.map(pokemon => <Pokemon data={pokemon} key={pokemon.id}/>)}
-      </div>
-    </body>
+      <PokemonContent pokemons={pokemons}/>
+    </div>
   )
 }
 
