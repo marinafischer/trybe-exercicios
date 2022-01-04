@@ -1,0 +1,76 @@
+li {
+  list-style: none;
+}
+
+.pokemons-content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-flow:row wrap;
+  justify-content: center;
+  align-content: space-between;
+}
+
+.pokemons {
+  background-color: rgb(212, 212, 212);
+  border-radius: 15%;
+  border: solid rgb(155, 155, 155) 1px;
+  margin: 10px;
+  padding: 15px;
+  width: 300px;
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.pokemonsFilter {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 5px;
+  justify-content: center;
+}
+
+.filterButon {
+  margin: 2px;
+  padding: 2px;
+  width: 80px;
+  height: 50px;
+  border-radius: 10px;
+  background-color : orange;
+  border: 2px solid rgb(233, 156, 32);
+  color: white;
+  font-weight: 600;
+}
+
+.filterButon:hover {
+  background-color: orangered;
+  cursor: pointer;
+}
+
+.nextPokemon {
+  margin: 10px;
+  padding: 5px;
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  background-color: rgb(155, 155, 155);
+  color: white;
+  font-weight: 900;
+  border: solid 2px rgb(110, 110, 110)
+}
+
+.nextPokemon:hover {
+  background-color: rgb(110, 110, 110);
+  cursor: pointer;
+}
