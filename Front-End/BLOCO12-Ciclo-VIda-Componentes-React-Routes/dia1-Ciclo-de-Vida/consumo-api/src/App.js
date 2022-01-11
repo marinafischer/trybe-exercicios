@@ -9,34 +9,30 @@ class App extends React.Component {
       user: undefined,
       loading: true,
     }
+    this.fetchUser = this.fetchUser.bind(this)
   }
-
+  
   async fetchUser(){
-    this.setState(
-      {loading: true}, 
-      async()=>{
-        const requestReturn = await fetch('https://api.randomuser.me/');
-        const requestObject = await requestReturn.json();
-        this.setState({
-          user: requestObject.results[0],
-          loading: false
-        })
-      }
-    )
+    
+    const requestReturn = await fetch('https://api.randomuser.me/');
+    const requestObject = await requestReturn.json();
+    this.setState({
+      user: requestObject.results[0],
+      loading: false
+    })
   }
-
+  
   componentDidMount(){
     this.fetchUser();
   }
-
   shouldComponentUpdate(_nextProps, nextState){
-    console.log(nextState)
-    if ( nextState.user === undefined || nextState.user.dob.age <= 50) {
+    if ( 
+     nextState.user === undefined || 
+      nextState.user.dob.age <= 50) {
       return true;
     }
     return false;
   }
-
   renderUser() {
     const { name, email, picture, dob } = this.state.user
     return(
