@@ -84,24 +84,24 @@ The main technical stacks studied are JavaScript, HTML, CSS, React, Node, Expres
 - [x] 11.3 Project Solar System
 
 **Section 11  State, Event Component and Forms with React**
-- [x] 12.1 State and Event Components
-- [x] 12.2 Forms on React
-- [x] 12.3 Project Tryunfo
+- [x] 11.1 State and Event Components
+- [x] 11.2 Forms on React
+- [x] 11.3 Project Tryunfo
 
 **Section 12 Lifecycle Components and React Router**
-- [ ] 13.1 Lifecycle Components
-- [ ] 13.2 React Router
-- [ ] 13.3 Project TrybeTunes
+- [X] 12.1 Lifecycle Components
+- [X 12.2 React Router
+- [X] 12.3 Project TrybeTunes
 
 **Section 13 Agile Methodologies**
-- [ ] 14.1 Agile Methodologies
-- [ ] 14.2 Project Front-end Online Store
+- [X] 13.1 Agile Methodologies
+- [X] 13.2 Project Front-end Online Store
 
 **Section 14 Automated Tests with React Testing Library**
-- [ ] 15.1 Firsts steps 
-- [ ] 15.2 Mocks and Inputs
-- [ ] 15.3 Testing React Router
-- [ ] 15.4 Project Tests on React
+- [ ] 14.1 Firsts steps 
+- [ ] 14.2 Mocks and Inputs
+- [ ] 14.3 Testing React Router
+- [ ] 14.4 Project Tests on React
 
 **Section 15 State Management with Redux**
 - [ ] 16.1 Introduction to Redux: Global state app
