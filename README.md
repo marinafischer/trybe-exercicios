@@ -98,154 +98,153 @@ The main technical stacks studied are JavaScript, HTML, CSS, React, Node, Expres
 - [X] 13.2 Project Front-end Online Store
 
 **Section 14 Automated Tests with React Testing Library**
-- [ ] 14.1 Firsts steps 
-- [ ] 14.2 Mocks and Inputs
-- [ ] 14.3 Testing React Router
-- [ ] 14.4 Project Tests on React
+- [x] 14.1 Firsts steps 
+- [x] 14.2 Mocks and Inputs
+- [x] 14.3 Testing React Router
+- [x] 14.4 Project Tests on React
 
 **Section 15 State Management with Redux**
-- [ ] 16.1 Introduction to Redux: Global state app
-- [ ] 16.2 Using Redux on React
-- [ ] 16.3 Practice
-- [ ] 16.4 Actions Asynchronous
-- [ ] 16.5 Tests on React Redux
-- [ ] 16.6 Project Trybe Wallet
+- [ ] 15.1 Introduction to Redux: Global state app
+- [ ] 15.2 Using Redux on React
+- [ ] 15.3 Practice
+- [ ] 15.4 Actions Asynchronous
+- [ ] 15.5 Tests on React Redux
+- [ ] 15.6 Project Trybe Wallet
 
 **Section 16 Trivia**
-- [ ] 17.1 Project Trivia Game
+- [ ] 16.1 Project Trivia Game
 
 **Section 17 Context Api and React Hooks**
-- [ ] 18.1 Context API React
-- [ ] 18.2 useState and useContext
-- [ ] 18.3 useEffect and custom hooks 
+- [ ] 17.1 Context API React
+- [ ] 17.2 useState and useContext
+- [ ] 17.3 useEffect and custom hooks 
 
 **Section 18 Recipes App**
-- [ ] 19.1 Project Recipes App 
+- [ ] 18.1 Project Recipes App 
 
 
 ## Back-End Development
 
 **Section 19 Introduction to SQL**
-- [ ] 20.1 Introduction to Back-End
-- [ ] 20.1 Relational database
-- [ ] 20.1 SQL database
-- [ ] 20.2 Searching for data in a database
-- [ ] 20.3 Filtering data in a specifically 
-- [ ] 20.4 Manipulating tables
-- [ ] 20.5 Project All for One
+- [ ] 19.1 Introduction to Back-End
+- [ ] 19.1 Relational database
+- [ ] 19.1 SQL database
+- [ ] 19.2 Searching for data in a database
+- [ ] 19.3 Filtering data in a specifically 
+- [ ] 19.4 Manipulating tables
+- [ ] 19.5 Project All for One
 
 **Section 20 SQL Functions, Joins and Subqueries**
-- [ ] 21.1 SQL’s most used functions
-- [ ] 21.2 Uncomplicating JOINs, UNIONs and Subqueries
-- [ ] 21.3 Stored Routines and Stored Functions
-- [ ] 21.4 Project Vocabulary Booster
+- [ ] 20.1 SQL’s most used functions
+- [ ] 20.2 Uncomplicating JOINs, UNIONs and Subqueries
+- [ ] 20.3 Stored Routines and Stored Functions
+- [ ] 20.4 Project Vocabulary Booster
 
 **Section 21 Normalization and Modeling Database**
-- [ ] 22.1 Transforming ideas in a database modeling, part I
-- [ ] 22.2 Normalization, Normal Forms and Dumps
-- [ ] 22.3 Transforming ideas in a database modeling, part II
-- [ ] 22.4 Project One for All
+- [ ] 21.1 Transforming ideas in a database modeling, part I
+- [ ] 21.2 Normalization, Normal Forms and Dumps
+- [ ] 21.3 Transforming ideas in a database modeling, part II
+- [ ] 21.4 Project One for All
 
 **Section 22 Introduction to MongoDB**
-- [ ] 23.1 NoSQL
-- [ ] 23.1 MongoDB
-- [ ] 23.2 Filter Operators
-- [ ] 23.3 Project Data Flights
+- [ ] 22.1 NoSQL
+- [ ] 22.1 MongoDB
+- [ ] 22.2 Filter Operators
+- [ ] 22.3 Project Data Flights
 
 **Section 23 MongoDB: Simple and Complex Updates**
-- [ ] 24.1 Simple Updates
-- [ ] 24.2 Complex Updates: Array part I
-- [ ] 24.3 Complex Updates: Array part II
-- [ ] 24.4 Project Commerce
+- [ ] 23.1 Simple Updates
+- [ ] 23.2 Complex Updates: Array part I
+- [ ] 23.3 Complex Updates: Array part II
+- [ ] 23.4 Project Commerce
 
 **Section 24 MongoDB: Aggregation Framework**
-- [ ] 25.1 Aggregation Framework part I
-- [ ] 25.2 Aggregation Framework part II
-- [ ] 25.3 Project Aggregations 
+- [ ] 24.1 Aggregation Framework part I
+- [ ] 24.2 Aggregation Framework part II
+- [ ] 24.3 Project Aggregations 
 
 **Section 25 Introduction to Web Development with NodeJS**
-- [ ] 26.1 NodeJS
-- [ ] 26.1 Introduction to Node.js
-- [ ] 26.2 Node.js Asynchronous flow
-- [ ] 26.3 Tests with NodeJS 
-- [ ] 26.4 Express: HTTP with Node.js
-- [ ] 26.5 Express: Middlewares
-- [ ] 26.6 Project Talker Manager
+- [ ] 25.1 NodeJS
+- [ ] 25.1 Introduction to Node.js
+- [ ] 25.2 Node.js Asynchronous flow
+- [ ] 25.3 Tests with NodeJS 
+- [ ] 25.4 Express: HTTP with Node.js
+- [ ] 25.5 Express: Middlewares
+- [ ] 25.6 Project Talker Manager
 
 **Section 26 NodeJS: Service and Architecture Rest and Restful**
-- [ ] 27.1 Software architecture
-- [ ] 27.1 Software architecture: Model
-- [ ] 27.2 Software architecture: Controller and Service
-- [ ] 27.3 Web architecture: Rest and Restful
-- [ ] 27.4 Software architecture: Testing patterns 
-- [ ] 27.5 Project Store Manager
+- [ ] 26.1 Software architecture
+- [ ] 26.1 Software architecture: Model
+- [ ] 26.2 Software architecture: Controller and Service
+- [ ] 26.3 Web architecture: Rest and Restful
+- [ ] 26.4 Software architecture: Testing patterns 
+- [ ] 26.5 Project Store Manager
 
 **Section 27 Authentication and File Upload**
-- [ ] 28.1 NodeJS JWT (JSON Web Token)
-- [ ] 28.2 File upload with multer
-- [ ] 28.3 Testing API’s with integration test
-- [ ] 28.4 Project Cookmaster
+- [ ] 27.1 NodeJS JWT (JSON Web Token)
+- [ ] 27.2 File upload with multer
+- [ ] 27.3 Testing API’s with integration test
+- [ ] 27.4 Project Cookmaster
 
 **Section 28 Deployment**
-- [ ] 29.1 Deploy
-- [ ] 29.1 Deploy with Heroku
-- [ ] 29.2 Deploy: Process management
-- [ ] 29.3 Project Stranger Things
+- [ ] 28.1 Deploy
+- [ ] 28.1 Deploy with Heroku
+- [ ] 28.2 Deploy: Process management
+- [ ] 28.3 Project Stranger Things
 
 **Section 29 Architecture: Solid and ORM**
-- [ ] 30.1 Architecture: SOLID principles
-- [ ] 30.2 ORM: Interface application with database
-- [ ] 30.3 ORM: Associations
-- [ ] 30.4 Project API’s Blogs
+- [ ] 29.1 Architecture: SOLID principles
+- [ ] 29.2 ORM: Interface application with database
+- [ ] 29.3 ORM: Associations
+- [ ] 29.4 Project API’s Blogs
 
 **Section 30 Sockets**
-- [ ] 31.1 Software architecture: View
-- [ ] 31.2 TCP/UDP & NET
-- [ ] 31.3 Socket.io
-- [ ] 31.4 Practicing Socket.io
-- [ ] 31.5 Webchat
+- [ ] 30.1 Software architecture: View
+- [ ] 30.2 TCP/UDP & NET
+- [ ] 30.3 Socket.io
+- [ ] 30.4 Practicing Socket.io
+- [ ] 30.5 Webchat
 
 **Section 31 Delivery App**
-- [ ] 32.1 Project Delivery App
+- [ ] 31.1 Project Delivery App
 
 
 ## Computer Science
 
 **Section 32 Introduction to Python**
-- [ ] 33.1 Introduction to Computer Science
-- [ ] 33.1 Learning Python 
-- [ ] 33.2 Data input and output
-- [ ] 33.3 Tests
-- [ ] 33.4 Project Job Insight 
+- [ ] 32.1 Introduction to Computer Science
+- [ ] 32.1 Learning Python 
+- [ ] 32.2 Data input and output
+- [ ] 32.3 Tests
+- [ ] 32.4 Project Job Insight 
 
 **Section 33 Object Oriented Programming and Project Patterns**
-- [ ] 34.1 Introduction to object oriented programming 
-- [ ] 34.2 Inheritance, composition and interfaces
-- [ ] 34.3 Project patterns 
-- [ ] 34.4 Project Stock Report
+- [ ] 33.1 Introduction to object oriented programming 
+- [ ] 33.2 Inheritance, composition and interfaces
+- [ ] 33.3 Project patterns 
+- [ ] 33.4 Project Stock Report
 
 **Section 34 Scraping Data**
-- [ ] 35.1 Web architecture
-- [ ] 35.2 Computer network, tools and safety
-- [ ] 35.3 Scraping data
-- [ ] 35.4 Project Tech News
+- [ ] 34.1 Web architecture
+- [ ] 34.2 Computer network, tools and safety
+- [ ] 34.3 Scraping data
+- [ ] 34.4 Project Tech News
 
 **Section 35 Algorithm**
-- [ ] 36.1 Algorithm complexity
-- [ ] 36.2 Recursion and problem solving strategy
-- [ ] 36.3 Sorting and searching algorithms
-- [ ] 36.4 Project Algorithm
+- [ ] 35.1 Algorithm complexity
+- [ ] 35.2 Recursion and problem solving strategy
+- [ ] 35.3 Sorting and searching algorithms
+- [ ] 35.4 Project Algorithm
 
 **Section 36 Data Structure I: Arrays, Hashmaps and Sets**
-- [ ] 37.1 COmputer architecture
-- [ ] 37.2 Arrays
-- [ ] 37.3 Hashmap and Dict
-- [ ] 37.4 Set
-- [ ] 37.5 Project Restaurant Orders
+- [ ] 36.1 COmputer architecture
+- [ ] 36.2 Arrays
+- [ ] 36.3 Hashmap and Dict
+- [ ] 36.4 Set
+- [ ] 36.5 Project Restaurant Orders
 
 **Section 37 Data Structure II: Linked Lists, Queues and Stacks**
-- [ ] 38.1 Node and linked lists
-- [ ] 38.2 Deque
-- [ ] 38.3 Stacks
-- [ ] 38.4 Project TING: Trybe Is Not Google
-
+- [ ] 37.1 Node and linked lists
+- [ ] 37.2 Deque
+- [ ] 37.3 Stacks
+- [ ] 37.4 Project TING: Trybe Is Not Google
