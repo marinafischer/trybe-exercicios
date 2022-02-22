@@ -104,19 +104,19 @@ The main technical stacks studied are JavaScript, HTML, CSS, React, Node, Expres
 - [x] 14.4 Project Tests on React
 
 **Section 15 State Management with Redux**
-- [ ] 15.1 Introduction to Redux: Global state app
-- [ ] 15.2 Using Redux on React
-- [ ] 15.3 Practice
-- [ ] 15.4 Actions Asynchronous
-- [ ] 15.5 Tests on React Redux
-- [ ] 15.6 Project Trybe Wallet
+- [x] 15.1 Introduction to Redux: Global state app
+- [x] 15.2 Using Redux on React
+- [x] 15.3 Practice
+- [x] 15.4 Actions Asynchronous
+- [x] 15.5 Tests on React Redux
+- [x] 15.6 Project Trybe Wallet
 
 **Section 16 Trivia**
-- [ ] 16.1 Project Trivia Game
+- [x] 16.1 Project Trivia Game
 
 **Section 17 Context Api and React Hooks**
-- [ ] 17.1 Context API React
-- [ ] 17.2 useState and useContext
+- [x] 17.1 Context API React
+- [x] 17.2 useState and useContext
 - [ ] 17.3 useEffect and custom hooks 
 
 **Section 18 Recipes App**
